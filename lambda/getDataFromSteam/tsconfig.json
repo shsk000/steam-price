@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2017",
+    "sourceMap": true,
+    "types": ["node"],
+    "outDir": "./build",
+    "typeRoots": [""],
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "strict": false,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
+    // ???
+    // "noEmit": true,
+    "resolveJsonModule": true
+  },
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
+}

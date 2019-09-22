@@ -1,0 +1,29 @@
+version: '3'
+services:
+  db:
+    build: ./mysql/
+    command: "--innodb_use_native_aio=0"
+    environment:
+      - TZ=Asia/Tokyo
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    volumes:
+      - ./mysql/mysql_data:/var/lib/mysql # データの永続化
+      # - ./mysql/sqls:/docker-entrypoint-initdb.d # 初期データ投入
+      # - /etc/localtime:/etc/localtime:ro
+
+  node:
+    build: ./node/
+    environment:
+      - TZ=Asia/Tokyo
+    volumes:
+      - ./node/app:/node/app
+      - ./lambda:/node/lambda
+    tty: true
+    ports:
+      - "3000:3000"
+      - "9229:9229"
+    links:
+      - db:db

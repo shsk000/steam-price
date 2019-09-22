@@ -1,0 +1,30 @@
+{
+  "name": "steamrandom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node ./app/server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shsk000/steamRandom.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shsk000/steamRandom/issues"
+  },
+  "homepage": "https://github.com/shsk000/steamRandom#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "colors": "^1.3.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "lodash": "^4.17.11",
+    "mysql": "^2.16.0",
+    "promise-mysql": "^3.3.1"
+  },
+  "devDependencies": {}
+}
