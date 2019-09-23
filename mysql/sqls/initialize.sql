@@ -7,7 +7,7 @@ create table games_app_list (
     latest_price_versionid INT,
     primary key (appid),
     creation_time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    modification_time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    modification_time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) engine=InnoDB DEFAULT CHARSET=utf8mb4;
 
 create table games_price_list (
