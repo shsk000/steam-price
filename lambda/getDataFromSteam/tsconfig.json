@@ -12,8 +12,6 @@
     "strict": false,
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": false,
-    // ???
-    // "noEmit": true,
     "resolveJsonModule": true
   },
   "exclude": [
